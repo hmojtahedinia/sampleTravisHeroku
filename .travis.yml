@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- stable
+npm: true
+  cache: 
+    directories:
+      - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: p9yQh2jGItXg9+yxGlHHhKQYs4wlDIPUKwd43vrCy67nBvZGps5kKAccCM6L7C7sZY/qJqbaF+44FVdTH3midgOef6Gmzp9DDCsitrlDve1sGZL2AJOn0zBNeOCT0G+jGYt/azZa9tO4L0m6bGHI/F1CvjYVKEVsIC8bct1VH4CT4vOxHSydGcErk+MYuxm8Ro11jPiXtiQLnQARpRhE1jQV9sg9EYVj156u0B/2gV/19qo/3/M2+zU1K5naqShcY/T64uK9GQc587HwdOtPifRIAhRxpYiN5LkEZuwgFgU7ir1wbPYFD8IoQKWSOYZSB2Nkk/BDXl0Xcb0s7OHV5lz0fyqHBDCoV1ZTqdqx9TzyGMU+Go8e6Beq8heVJlY2gRzyw2zShHsI7rDQQN59tchrPBWYxvrZyw4wqfdrru/HymqBqFLaJvK4+SvdJICRxxG9ohdt5pjoMTxyVXBaNftJt4pl0INXkRnQPh8U/10CC6+Uq1T6vskTL5B7pHsxFDvoNq4qTsTwhZaO2qz/zsgylSOcUE9q3LaGgqHIIiRZOPslRNeDDX2yzUTEHaaYZYwX58jKxCYMtwJYod4wTNtQeXRnXKdFLeMBnySBUPdtlI+y4ZjrvcRHKY+Dpyr6aQpD0z+Cxuzwcs6V/ZPWdCcTZ0TSGESXEPEzSnkwccg=
+  app: sampleTravisHeroku
+  on:
+    repo: hmojtahedinia/sampleTravisHeroku
